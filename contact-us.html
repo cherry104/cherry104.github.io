@@ -84,6 +84,39 @@
       footer p {
         margin: 0;
       }
+      form {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      form label {
+        font-size: 16px;
+        margin-bottom: 8px;
+        display: block;
+      }
+      form input,
+      form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+      }
+      form input[type="submit"] {
+        width: auto;
+        background-color: #28a745;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+      form input[type="submit"]:hover {
+        background-color: #1f7e35;
+      }
       @media (max-width: 768px) {
         .container {
           width: 90%;
@@ -110,89 +143,73 @@
     <!-- Hero Section with Image -->
     <div class="hero-section">
       <img src="https://i.imgur.com/JzTN9sj.jpeg" alt="GlobalCure Healthcare" />
-      <div class="button-container">
-        <button type="button">
-          <a style="color: white" href="contact-us.html"
-            >Get a Free Consultation</a
-          >
-        </button>
-      </div>
     </div>
 
-    <!-- Why Choose GlobalCure Section -->
+    <!-- Contact Form Section -->
     <div class="container section">
-      <h2>Why Choose GlobalCure?</h2>
-      <h3>Affordability: Save up to 70% on medical treatments.</h3>
-      <p>
-        Our clients enjoy world-class medical care without the financial burden.
-        We offer transparent pricing and no hidden costs.
+      <h2 style="text-align: center">Get in Touch with GlobalCure</h2>
+      <p style="text-align: center">
+        We’re here to answer any questions and guide you through your healthcare
+        journey.
       </p>
-      <h3>
-        Top Hospitals: Access to internationally accredited hospitals in India.
-      </h3>
-      <p>
-        We partner with the most renowned hospitals to ensure you receive the
-        best treatment possible.
-      </p>
-      <h3>
-        End-to-End Care: We handle everything—from travel to post-treatment
-        care.
-      </h3>
-      <p>
-        Your journey with us is worry-free, as we take care of everything,
-        including travel arrangements, accommodations, and aftercare.
-      </p>
+      <hr />
+
+      <!-- Contact Form -->
+      <form
+        action="mailto:globalcurellc@gmail.com"
+        method="post"
+        enctype="text/plain"
+      >
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your Name"
+          required
+        />
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Your Email"
+          required
+        />
+
+        <label for="phone">Phone No:</label>
+        <input
+          type="int"
+          id="phone"
+          name="phone"
+          placeholder="Your Phone No"
+          required
+        />
+
+        <label for="subject">Subject:</label>
+        <input
+          type="text"
+          id="subject"
+          name="subject"
+          placeholder="Subject"
+          required
+        />
+
+        <label for="message">Message:</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          placeholder="Your Message"
+          required
+        ></textarea>
+
+        <input type="submit" value="Send Message" />
+      </form>
     </div>
 
-    <!-- Our Specializations Section -->
-    <div class="container section">
-      <h2>Our Specializations</h2>
-      <h3>Knee Replacement</h3>
-      <h3>Hip Replacement</h3>
-      <h3>Cataract Surgery</h3>
-      <h3>Lasik Surgery</h3>
-      <h3>Heart Valve Replacement</h3>
-      <h3>Spinal Fusion</h3>
-      <div class="button-container">
-        <button type="button">
-          <a style="color: white" href="procedures.html"
-            >Explore All Procedures</a
-          >
-        </button>
-      </div>
-    </div>
-
-    <!-- How We Make It Easy Section -->
-    <div class="container section steps">
-      <h2>How We Make It Easy for You</h2>
-      <h3>Step 1: Contact Us for a Free Consultation.</h3>
-      <h3>Step 2: Choose Your Package & Procedure.</h3>
-      <h3>Step 3: We Handle Your Travel, Stay, and Surgery.</h3>
-      <h3>Step 4: Return Home with a Healthy You.</h3>
-      <div class="button-container">
-        <button type="button">
-          <a style="color: white" href="patient-journey.html">Get Started</a>
-        </button>
-      </div>
-    </div>
-
-    <!-- Patient Success Stories Section -->
-    <div class="container section">
-      <h2>Patient Success Stories</h2>
-      <p>
-        Discover how we've helped patients worldwide achieve a healthier,
-        pain-free life. (Include testimonials, if available)
-      </p>
-    </div>
-
-    <!-- Partner Hospitals Section -->
-    <div class="container section">
-      <h2>Our Partner Hospitals</h2>
-      <p>
-        We collaborate with leading hospitals in India, ensuring world-class
-        medical care with state-of-the-art technology.
-      </p>
-    </div>
+    <hr />
 
     <!-- Footer Section -->
     <footer>
