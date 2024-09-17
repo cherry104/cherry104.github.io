@@ -156,56 +156,39 @@
 
       <!-- Contact Form -->
       <form
-        action="mailto:globalcurellc@gmail.com"
-        method="post"
-        enctype="text/plain"
+        method="POST"
+        action="https://script.google.com/macros/s/AKfycbzJm9pgHeChKlNFMIjSiFDCHOSJDGSVsRf7ocfHsygzsvzRrNCHKKSqycQO4gEMBbiF/exec"
       >
-        <label for="name">Name:</label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          placeholder="Your Name"
-          required
-        />
+        <label for="Name">Name:</label>
+        <input name="Name" type="text" placeholder="Your Name" required />
 
-        <label for="email">Email:</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="Your Email"
-          required
-        />
+        <label for="Email">Email:</label>
+        <input name="Email" type="email" placeholder="Your Email" required />
 
-        <label for="phone">Phone No:</label>
-        <input
-          type="int"
-          id="phone"
-          name="phone"
-          placeholder="Your Phone No"
-          required
-        />
+        <label for="Phone">Phone No:</label>
+        <input name="Phone" type="int" placeholder="Your Phone No" required />
 
-        <label for="subject">Subject:</label>
-        <input
-          type="text"
-          id="subject"
-          name="subject"
-          placeholder="Subject"
-          required
-        />
+        <label for="Subject">Subject:</label>
+        <input name="Subject" type="text" placeholder="Subject" required />
 
-        <label for="message">Message:</label>
+        <label for="Message">Message:</label>
         <textarea
-          id="message"
-          name="message"
+          name="Message"
           rows="5"
           placeholder="Your Message"
           required
         ></textarea>
 
-        <input type="submit" value="Send Message" />
+        <input type="submit" value="Send Message" id="submitBtn" />
+
+        <script>
+          document
+            .getElementById("submitBtn")
+            .addEventListener("click", myFunction);
+          function myFunction() {
+            window.location.href = "http://programminghead.com";
+          }
+        </script>
       </form>
     </div>
 
