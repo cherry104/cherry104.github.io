@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GlobalCure: Bridging Health Globally</title>
@@ -71,10 +77,30 @@
         font-weight: normal;
         margin: 15px 0;
       }
+      .testimonial {
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 600px;
+        text-align: center;
+        margin: 20px;
+      }
+
+      .testimonial h4 {
+        color: #007acc;
+        margin-bottom: 10px;
+      }
+
+      .testimonial p {
+        font-size: 16px;
+        color: #333;
+      }
       .button-container {
         text-align: center;
         margin-top: 20px;
       }
+
       footer {
         background-color: #007acc;
         color: white;
@@ -197,11 +223,189 @@
 
     <!-- Patient Success Stories Section -->
     <div class="container section">
-      <h2>Patient Success Stories</h2>
-      <p>
+      <h2 style="text-align: center">Patient Success Stories</h2>
+      <p style="text-align: center">
         Discover how we've helped patients worldwide achieve a healthier,
-        pain-free life. (Include testimonials, if available)
+        pain-free life.
       </p>
+      <div
+        id="testimonialCarousel"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="testimonial">
+                <h4>John Smith, 58 (USA)</h4>
+                <p><strong>Procedure:</strong> Knee Replacement</p>
+                <p>
+                  "I was nervous about traveling abroad for surgery, but
+                  GlobalCure made the entire experience seamless. The care I
+                  received was world-class, and I saved thousands on my knee
+                  replacement. I’m back to hiking and pain-free!"
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="testimonial">
+                <h4>Sarah Thompson, 43 (UK)</h4>
+                <p><strong>Procedure:</strong> Hip Replacement</p>
+                <p>
+                  "GlobalCure exceeded my expectations in every way. The
+                  hospital in India was outstanding, and the personalized care
+                  made me feel like I was in good hands from start to finish. My
+                  hip feels brand new, and I couldn't be happier with my
+                  choice."
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="testimonial">
+                <h4>Mohammed Al-Bakri, 61 (UAE)</h4>
+                <p><strong>Procedure:</strong> Cataract Surgery</p>
+                <p>
+                  "I was impressed by the professionalism and efficiency of
+                  GlobalCure. The doctors were highly skilled, and my vision is
+                  crystal clear after cataract surgery. Plus, the hospitality in
+                  India was incredible. Highly recommend!"
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="testimonial">
+                <h4>Karen Douglas, 52 (USA)</h4>
+                <p><strong>Procedure:</strong> Heart Bypass</p>
+                <p>
+                  "I found GlobalCure when I was searching for an affordable
+                  option for heart surgery. They connected me with top surgeons
+                  in India, and the experience was phenomenal. The cost savings
+                  were tremendous, and I received excellent care."
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="testimonial">
+                <h4>Robert Wilson, 66 (UK)</h4>
+                <p><strong>Procedure:</strong> Knee Replacement</p>
+                <p>
+                  "I never thought I'd travel for surgery, but GlobalCure made
+                  it an easy choice. The hospital was state-of-the-art, and the
+                  care was even better than what I would have expected back
+                  home. I’m grateful to be back on my feet."
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="testimonial">
+                <h4>Nadia Hassan, 39 (Saudi Arabia)</h4>
+                <p>
+                  <strong>Procedure:</strong> Cosmetic Surgery (Rhinoplasty)
+                </p>
+                <p>
+                  "لقد قدم فريق GlobalCure خدمة استثنائية طوال رحلتي. لقد سارت
+                  عمليتي الجراحية بسلاسة، وكان الأطباء في الهند من أعلى
+                  المستويات. وأنا سعيد للغاية بالنتائج وأوصي بشدة بـ GlobalCure
+                  للإجراءات التجميلية."
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="testimonial">
+                <h4>Thomas Murphy, 55 (Australia)</h4>
+                <p><strong>Procedure:</strong> Hip Replacement</p>
+                <p>
+                  "From the consultation to recovery, GlobalCure took care of
+                  every detail. The hospital facilities were modern, and the
+                  surgeons were highly skilled. My recovery has been smooth, and
+                  the cost was a fraction of what I’d pay at home."
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="testimonial">
+                <h4>Emily Johnson, 47 (USA)</h4>
+                <p><strong>Procedure:</strong> Bariatric Surgery</p>
+                <p>
+                  "GlobalCure helped me regain control of my life. The
+                  weight-loss surgery went perfectly, and the post-surgery care
+                  was amazing. Traveling to India was easy, and I feel like a
+                  new person!"
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="testimonial">
+                <h4>David Stewart, 62 (UK)</h4>
+                <p><strong>Procedure:</strong> Heart Bypass</p>
+                <p>
+                  "The level of care I received in India through GlobalCure was
+                  extraordinary. The medical staff were experts, and I felt safe
+                  every step of the way. Choosing GlobalCure saved my life and
+                  my savings!"
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="testimonial">
+                <h4>Mariam Al-Khalifa, 43 (UAE)</h4>
+                <p><strong>Procedure:</strong> Dental Implants</p>
+                <p>
+                  "I came to GlobalCure for dental implants, and I was blown
+                  away by the service and expertise. The facilities in India
+                  were top-notch, and my smile has never looked better. I’m so
+                  glad I made the trip."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#testimonialCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#testimonialCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </div>
 
     <!-- Partner Hospitals Section -->
